@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DEPENDABLE LAPTIES | LAPTOP SHOP</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;800&family=Poppins:wght@500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-transform: uppercase;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffe1f0, #e2c7f7, #bde0fe);
+      color: #2b2b2b;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #bde0fe, #cdb4db, #ffc8dd);
+      text-align: center;
+      padding: 60px 20px;
+      color: #4a148c;
+      font-family: 'Raleway', sans-serif;
+      letter-spacing: 2px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      border-bottom-left-radius: 80px;
+      border-bottom-right-radius: 80px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #cdb4db;
+      padding: 20px 0;
+      gap: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #2b2b2b;
+      text-decoration: none;
+      padding: 14px 30px;
+      font-weight: 700;
+      border-radius: 35px;
+      background-color: #bde0fe;
+      transition: all 0.3s ease;
+      border: 3px solid transparent;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    nav a:hover {
+      background-color: #ffc8dd;
+      border: 3px solid #a15bc1;
+      color: #4a148c;
+      transform: scale(1.15);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 50px;
+      border-radius: 25px;
+      background-color: #ffffffd9;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2.3rem;
+      color: #4a148c;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 25px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #bde0fe;
+      color: #4a148c;
+      padding: 12px 30px;
+      font-weight: 700;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin-top: 15px;
+      border: 2px solid transparent;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .btn:hover {
+      background-color: #ffc8dd;
+      border-color: #a15bc1;
+      transform: scale(1.1);
+      color: #2b2b2b;
+    }
+
+    .home img {
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 20px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .feature {
+      flex: 1 1 300px;
+      background: linear-gradient(180deg, #bde0fe, #ffc8dd);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .feature img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .feature:hover {
+      transform: scale(1.05);
+    }
+
+    /* Shop Section */
+    .shop-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .product {
+      background: linear-gradient(180deg, #ffc8dd, #bde0fe);
+      border-radius: 25px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      color: #4a148c;
+      margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    .price {
+      color: #2b2b2b;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: linear-gradient(90deg, #cdb4db, #ffc8dd, #bde0fe);
+      text-align: center;
+      padding: 25px 10px;
+      font-weight: 700;
+      color: #2b2b2b;
+      letter-spacing: 1px;
+      border-top-left-radius: 80px;
+      border-top-right-radius: 80px;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>DEPENDABLE LAPTIES</h1>
+    <p>YOUR TRUSTED SOURCE FOR QUALITY LAPTOPS AND TECHNOLOGY SOLUTIONS</p>
+  </header>
+
+  <nav>
+    <a href="#home">🏠 HOME</a>
+    <a href="#why">💻 WHY CHOOSE US</a>
+    <a href="#shop">🛍️ SHOP</a>
+    <a href="#about">👩‍💻 ABOUT US</a>
+    <a href="#contact">📞 CONTACT US</a>
+  </nav>
+
+  <section id="home" class="home">
+    <h2>WELCOME TO DEPENDABLE LAPTIES</h2>
+    <p>
+      DEPENDABLE LAPTIES IS AN ICT-BASED SHOP THAT SPECIALIZES IN HIGH-QUALITY, RELIABLE, AND AFFORDABLE LAPTOPS.
+      WE BRING YOU MODERN, STYLISH, AND POWERFUL DEVICES THAT SUPPORT YOUR EDUCATION, BUSINESS, AND CREATIVE PROJECTS.
+    </p>
+    <a href="#shop" class="btn">BROWSE OUR LAPTOPS</a>
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=80" alt="Dependable Lapties Laptops">
+  </section>
+
+  <section id="why" class="content-box">
+    <h2>WHY CHOOSE DEPENDABLE LAPTIES</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://www.intelice.com/wp-content/uploads/2021/08/Fastest-CPU-for-2021-1.jpg" alt="Performance">
+        <h3>⚙️ HIGH PERFORMANCE</h3>
+        <p>POWERFUL PROCESSORS AND SPEEDY STORAGE FOR PRODUCTIVITY AND ENTERTAINMENT.</p>
+      </div>
+      <div class="feature">
+        <img src="https://www.webfx.com/wp-content/uploads/2023/08/nzxt-h9-flow.png" alt="Modern Design">
+        <h3>🎨 MODERN DESIGN</h3>
+        <p>SLEEK, LIGHTWEIGHT, AND PROFESSIONAL LAPTOPS THAT FIT EVERY STYLE.</p>
+      </div>
+      <div class="feature">
+        <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=600&q=80" alt="Battery Life">
+        <h3>🔋 LONG BATTERY LIFE</h3>
+        <p>STAY PRODUCTIVE FOR HOURS WITH ENERGY-EFFICIENT, HIGH-CAPACITY BATTERIES.</p>
+      </div>
+      <div class="feature">
+        <img src="https://blog.qatestlab.com/wp-content/uploads/2020/05/Gaming_PC_Performance_4-min.jpg" alt="Reliability">
+        <h3>🛠️ RELIABILITY</h3>
+        <p>TRUSTED QUALITY AND WARRANTY SERVICE FOR EVERY LAPTOP PURCHASED.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop" class="content-box">
+    <h2>OUR FEATURED LAPTOPS</h2>
+    <div class="shop-grid">
+      <div class="product">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/13-laptop-platinum-right-render-fy25:VP4-1260x795?fmt=png-alpha" alt="Lapties Pro X1">
+        <h3>LAPTIES PRO X1</h3>
+        <p>INTEL CORE I7 • 16GB RAM • 512GB SSD • 15.6” DISPLAY</p>
+        <p class="price">₱48,999</p>
+        <a href="buynow.html" class="btn">BUY NOW</a>
+      </div>
+      <div class="product">
+        <img src="https://cf-images.dustin.eu/cdn-cgi/image/fit=contain,format=auto,quality=75,width=828,fit=contain/image/d2000010011278696/microsoft-surface-laptop-7-copilot-pc-black-qualcomm-snapdragon-x-elite-32gb-1000gb-15.jpeg" alt="Lapties Lite Book">
+        <h3>LAPTIES LITE BOOK</h3>
+        <p>INTEL CORE I5 • 8GB RAM • 256GB SSD • ULTRA SLIM DESIGN</p>
+        <p class="price">₱35,499</p>
+        <a href="buynow-lite-book.html" class="btn">BUY NOW</a>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=600&q=80" alt="Lapties Student Mate">
+        <h3>LAPTIES STUDENT MATE</h3>
+        <p>INTEL CORE I3 • 8GB RAM • 256GB SSD • LIGHTWEIGHT & PORTABLE</p>
+        <p class="price">₱29,999</p>
+        <a href="buynow-student-mate.html" class="btn">BUY NOW</a>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Lapties Gaming Edge">
+        <h3>LAPTIES GAMING EDGE</h3>
+        <p>RYZEN 7 • 16GB RAM • 1TB SSD • NVIDIA GTX 1650 • RGB KEYBOARD</p>
+        <p class="price">₱62,999</p>
+        <a href="buynow-gaming-edge.html" class="btn">BUY NOW</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="content-box">
+    <h2>ABOUT US</h2>
+    <p>
+      DEPENDABLE LAPTIES WAS FOUNDED BY PRINCESS HAMILI, KEITH ANNE MARIE MONES,
+      JANINE BANDOL, AND AZI BALDADO FROM TVL-ICT 12 DEPENDABLE.
+      OUR MISSION IS TO PROVIDE HIGH-QUALITY, AFFORDABLE, AND INNOVATIVE LAPTOPS THAT
+      SUPPORT STUDENTS, CREATORS, AND PROFESSIONALS IN THE DIGITAL AGE.
+    </p>
+  </section>
+
+  <section id="contact" class="content-box">
+    <h2>CONTACT US</h2>
+    <p><strong>EMAIL:</strong> DEPENDABLELAPTIES@EXAMPLE.COM</p>
+    <p><strong>PHONE:</strong> 0909 456 7893</p>
+    <p><strong>ADDRESS:</strong> DOÑA JOSEFA, LAS PIÑAS CITY, MANILA</p>
+    <a href="mailto:dependablelapties@example.com" class="btn">SEND AN EMAIL</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DEPENDABLE LAPTIES | ALL RIGHTS RESERVED</p>
+  </footer>
+
+</body>
+</html>
+fonts.googleapis.com
